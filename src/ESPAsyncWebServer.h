@@ -74,7 +74,7 @@ typedef enum {
 #define RESPONSE_TRY_AGAIN 0xFFFFFFFF
 
 typedef uint8_t WebRequestMethodComposite;
-typedef std::function<void(void)> ArDisconnectHandler;
+typedef std::function<void(AsyncWebServerRequest* request)> ArDisconnectHandler;
 
 /*
  * PARAMETER :: Chainable object to hold GET/POST and FILE parameters
